@@ -61,6 +61,7 @@ header {
     padding: 8px;
     border: none;
     border-radius: 5px;
+    outline: none;
 }
 
 .user-actions {
@@ -291,7 +292,6 @@ nav a {
     text-align: center;
     background-color: #f7f7f7;
     margin: 25px 120px; 
-
     position: relative;
     display: inline-block; 
 }
@@ -379,10 +379,16 @@ nav a {
     margin-bottom: 20px;
 }
 
+.footer-part p, button {
+    align-items: center;
+}
+
 .footer-part2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.footer-part2-section{
     background-color: white;
 }
 
@@ -441,4 +447,79 @@ nav a {
 
 .social-icons {
     font-size: 25px;
+}
+
+.line {
+    border-bottom: 1px solid grey;
+}
+@media screen and (max-width:767px){ 
+    .top-bar {
+        display: none;
+    }
+    header {
+        display: none;
+    }
+    nav {
+        display: none;
+    }
+    .promo-section{
+        display: none;
+    }
+    .features-section {
+        display: none;
+    }
+    .container-image {
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+    .box-image {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .section-header {
+        justify-content: center;
+        column-gap: 5rem;
+    }
+    .product-boxes-section {
+        flex-direction: column;
+        row-gap: 1rem;
+        margin: 0;
+    }
+    .product-box { 
+        margin: 0 auto;
+        width: 70%;
+        height: 500px;
+    }
+    .section-header2 {
+        justify-content: center;
+        column-gap: 5rem;
+    }
+    .product-boxes-section2 {
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+    .product-box {
+        margin: 0 auto;
+        width: 70%;
+        height: 500px;
+    }
+    .site-footer {
+        margin-top: 40px;
+        flex-direction: column;
+    }
+    .footer-part {
+        flex-direction: column;
+    }
+    .footer-links li {
+        align-items: center;
+    }
+    .footer-part2 {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .section-header {
+        justify-content: center;
+        column-gap: 3rem;
+    }
+    
 }
